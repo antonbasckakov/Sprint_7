@@ -1,18 +1,11 @@
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.Response;
-import jdk.jfr.Description;
-import org.apache.commons.lang3.RandomStringUtils;
-import org.junit.Before;
+import jdk.jfr.Description;;
 import org.junit.Test;
-
 import static org.hamcrest.CoreMatchers.equalTo;
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.junit.Assert.assertEquals;
 
-public class CreateCourierTest  {
 
-    CourierApi courierApi = new CourierApi();
-
+public class CreateCourierTest   {
         @Test
         @DisplayName("Создание нового курьера")
         @Description("Курьера можно создать")
@@ -20,10 +13,16 @@ public class CreateCourierTest  {
             CourierCreateRequestPojo courierCreateRequestPojo =
                     new CourierCreateRequestPojo(CourierData.login,CourierData.password, CourierData.firstName);
             CourierSteps courierSteps = new CourierSteps();
+            CourierLoginRequestPojo courierLoginRequestPojo =
+                    new CourierLoginRequestPojo(CourierData.login,CourierData.password);
             courierSteps.courierCreate(Pens.COURIER_CREATE_POST_PEN,courierCreateRequestPojo)
                     .assertThat().body("ok", equalTo(true))
                     .and()
                     .statusCode(201);
+            Response response = courierSteps.courierLogin(Pens.COURIER_LOGIN_POST_PEN,courierLoginRequestPojo);
+            Integer id = response.getBody().jsonPath().get("id");
+            courierSteps.courierDelete(id);
+
         }
 
     @Test
@@ -32,12 +31,17 @@ public class CreateCourierTest  {
     public void dublicateCourier() {
         CourierCreateRequestPojo courierCreateRequestPojo =
                 new CourierCreateRequestPojo(CourierData.login,CourierData.password, CourierData.firstName);
+        CourierLoginRequestPojo courierLoginRequestPojo =
+                new CourierLoginRequestPojo(CourierData.login,CourierData.password);
         CourierSteps courierSteps = new CourierSteps();
         courierSteps.courierCreate(Pens.COURIER_CREATE_POST_PEN,courierCreateRequestPojo);
         courierSteps.courierCreate(Pens.COURIER_CREATE_POST_PEN,courierCreateRequestPojo)
                 .assertThat().body("message", equalTo("Этот логин уже используется. Попробуйте другой."))
                 .and()
                 .statusCode(409);
+        Response response = courierSteps.courierLogin(Pens.COURIER_LOGIN_POST_PEN,courierLoginRequestPojo);
+        Integer id = response.getBody().jsonPath().get("id");
+        courierSteps.courierDelete(id);
     }
 
     @Test
@@ -46,11 +50,13 @@ public class CreateCourierTest  {
     public void createCourierWithoutLogin() {
         CourierCreateRequestPojo courierCreateRequestPojo =
                 new CourierCreateRequestPojo(null,CourierData.password, CourierData.firstName);
+
         CourierSteps courierSteps = new CourierSteps();
         courierSteps.courierCreate(Pens.COURIER_CREATE_POST_PEN,courierCreateRequestPojo)
                 .assertThat().body("message", equalTo("Недостаточно данных для создания учетной записи"))
                 .and()
                 .statusCode(400);
+
     }
 
     @Test
@@ -65,28 +71,5 @@ public class CreateCourierTest  {
                 .and()
                 .statusCode(400);
     }
-
-
-//    public void asert(){
-
-
-//            final String login = RandomStringUtils.randomAlphabetic(10);
-//            final String password = RandomStringUtils.randomAlphabetic(10);
-//            final String firstName = RandomStringUtils.randomAlphabetic(10);
-//
-//            CourierCreateRequestPojo expectedCourierCreateRequestPojo =
-//                    new CourierCreateRequestPojo(login,password,firstName);
-//             courierApi.courierCreate(expectedCourierCreateRequestPojo);
-
-
-//            assertEquals(firstName,expectedCourierCreateRequestPojo.getFirstName());
-
-//        }
-
-        // STEPS
-
-
-
-
 
 }

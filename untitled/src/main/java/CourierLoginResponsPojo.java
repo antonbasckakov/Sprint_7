@@ -1,5 +1,5 @@
 public class CourierLoginResponsPojo {
-    private int id;
+    private Integer id;
 
     //Конструкторы
     public CourierLoginResponsPojo(int id) {

@@ -1,4 +1,5 @@
 import io.qameta.allure.junit4.DisplayName;
+import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import jdk.jfr.Description;
 import org.junit.Test;
@@ -6,7 +7,7 @@ import org.junit.Test;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.instanceOf;
 
-public class LoginCourierTest {
+public class LoginCourierTest  {
     @Test
     @DisplayName("Авторизация ")
     @Description("Курьер авторизуется успешно")
@@ -19,10 +20,12 @@ public class LoginCourierTest {
         CourierSteps courierSteps = new CourierSteps();
 
         courierSteps.courierCreate(Pens.COURIER_CREATE_POST_PEN,courierCreateRequestPojo);
-        courierSteps.courierLogin(Pens.COURIER_LOGIN_POST_PEN,courierLoginRequestPojo)
-                .assertThat().body("id", instanceOf(Integer.class))
+        Response response = courierSteps.courierLogin(Pens.COURIER_LOGIN_POST_PEN,courierLoginRequestPojo);
+        response.then().assertThat().body("id", instanceOf(Integer.class))
                 .and()
                 .statusCode(200);
+        Integer id = response.getBody().jsonPath().get("id");
+        courierSteps.courierDelete(id);
     }
     @Test
     @DisplayName("Авторизация без пароля")
@@ -36,10 +39,12 @@ public class LoginCourierTest {
         CourierSteps courierSteps = new CourierSteps();
 
         courierSteps.courierCreate(Pens.COURIER_CREATE_POST_PEN,courierCreateRequestPojo);
-       courierSteps.courierLogin(Pens.COURIER_LOGIN_POST_PEN, courierLoginRequestPojo)
-                .assertThat().body("message", equalTo("Недостаточно данных для входа"))
+        Response response = courierSteps.courierLogin(Pens.COURIER_LOGIN_POST_PEN, courierLoginRequestPojo);
+        response.then().assertThat().body("message", equalTo("Недостаточно данных для входа"))
                 .and()
                 .statusCode(400);
+        Integer id = response.getBody().jsonPath().get("id");
+        courierSteps.courierDelete(id);
     }
     @Test
     @DisplayName("Авторизация без Логина")
@@ -53,10 +58,12 @@ public class LoginCourierTest {
         CourierSteps courierSteps = new CourierSteps();
 
         courierSteps.courierCreate(Pens.COURIER_CREATE_POST_PEN,courierCreateRequestPojo);
-        courierSteps.courierLogin(Pens.COURIER_LOGIN_POST_PEN, courierLoginRequestPojo)
-                .assertThat().body("message", equalTo("Недостаточно данных для входа"))
+        Response response = courierSteps.courierLogin(Pens.COURIER_LOGIN_POST_PEN, courierLoginRequestPojo);
+        response.then().assertThat().body("message", equalTo("Недостаточно данных для входа"))
                 .and()
                 .statusCode(400);
+        Integer id = response.getBody().jsonPath().get("id");
+        courierSteps.courierDelete(id);
     }
 
     @Test
@@ -68,8 +75,8 @@ public class LoginCourierTest {
                 new CourierLoginRequestPojo(CourierData.login,CourierData.password);
         CourierSteps courierSteps = new CourierSteps();
 
-        courierSteps.courierLogin(Pens.COURIER_LOGIN_POST_PEN, courierLoginRequestPojo)
-                .assertThat().body("message", equalTo("Учетная запись не найдена"))
+        Response response =courierSteps.courierLogin(Pens.COURIER_LOGIN_POST_PEN, courierLoginRequestPojo);
+        response.then().assertThat().body("message", equalTo("Учетная запись не найдена"))
                 .and()
                 .statusCode(404);
     }

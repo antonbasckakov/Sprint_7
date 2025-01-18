@@ -6,11 +6,15 @@ public class CourierCreateRequestPojo {
     private String password;
     private String name;
 
+
+
+
     //Конструкторы
     public CourierCreateRequestPojo(String login, String password, String firstName) {
         this.login = login;
         this.password = password;
         this.name = firstName;
+
     }
 
     public CourierCreateRequestPojo(){

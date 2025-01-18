@@ -1,4 +1,5 @@
 import io.qameta.allure.Step;
+import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 
 import static io.restassured.RestAssured.given;
@@ -15,11 +16,20 @@ public class CourierSteps extends BaseHttpClient {
     }
 
     @Step("Логин курьера")
-    public ValidatableResponse courierLogin(String path,  CourierLoginRequestPojo courierLoginRequestPojo){
-        return given()
+    public Response courierLogin(String path, CourierLoginRequestPojo courierLoginRequestPojo){
+        return (Response) given()
                 .spec(baseRequestSpec)
                 .body(courierLoginRequestPojo)
                 .post(path)
-                .then();
+                .thenReturn();
     }
+    @Step("Удалить курьера")
+    public void courierDelete(Integer courierId) {
+                given()
+                .spec(baseRequestSpec)
+                .delete(Pens.COURIER_REMOVAL_DELETE_PEN + courierId);
+
+    }
+
+
 }

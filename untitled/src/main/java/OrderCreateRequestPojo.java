@@ -1,3 +1,5 @@
+import com.github.javafaker.Address;
+
 import java.util.List;
 
 public class OrderCreateRequestPojo {
