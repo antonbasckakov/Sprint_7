@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="GetOrderTest" time="60.162" tests="1" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.class.path" value="C:\Sprint7\Sprint_7\untitled\target\test-classes;C:\Sprint7\Sprint_7\untitled\target\classes;C:\Users\baskakov\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\baskakov\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\baskakov\.m2\repository\io\rest-assured\rest-assured\4.4.0\rest-assured-4.4.0.jar;C:\Users\baskakov\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\baskakov\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.8\groovy-xml-3.0.8.jar;C:\Users\baskakov\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\baskakov\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\baskakov\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\baskakov\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\baskakov\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\baskakov\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\baskakov\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\baskakov\.m2\repository\io\rest-assured\json-path\4.4.0\json-path-4.4.0.jar;C:\Users\baskakov\.m2\repository\org\codehaus\groovy\groovy-json\3.0.8\groovy-json-3.0.8.jar;C:\Users\baskakov\.m2\repository\io\rest-assured\rest-assured-common\4.4.0\rest-assured-common-4.4.0.jar;C:\Users\baskakov\.m2\repository\io\rest-assured\xml-path\4.4.0\xml-path-4.4.0.jar;C:\Users\baskakov\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\baskakov\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\baskakov\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\baskakov\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\baskakov\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\baskakov\.m2\repository\io\qameta\allure\allure-junit4\2.9.0\allure-junit4-2.9.0.jar;C:\Users\baskakov\.m2\repository\io\qameta\allure\allure-java-commons\2.9.0\allure-java-commons-2.9.0.jar;C:\Users\baskakov\.m2\repository\io\qameta\allure\allure-model\2.9.0\allure-model-2.9.0.jar;C:\Users\baskakov\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.7\jackson-databind-2.9.7.jar;C:\Users\baskakov\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\Users\baskakov\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.7\jackson-core-2.9.7.jar;C:\Users\baskakov\.m2\repository\org\apache\tika\tika-core\1.19.1\tika-core-1.19.1.jar;C:\Users\baskakov\.m2\repository\org\aspectj\aspectjrt\1.9.1\aspectjrt-1.9.1.jar;C:\Users\baskakov\.m2\repository\org\jooq\joor-java-8\0.9.9\joor-java-8-0.9.9.jar;C:\Users\baskakov\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\baskakov\.m2\repository\io\qameta\allure\allure-rest-assured\2.9.0\allure-rest-assured-2.9.0.jar;C:\Users\baskakov\.m2\repository\io\qameta\allure\allure-attachments\2.9.0\allure-attachments-2.9.0.jar;C:\Users\baskakov\.m2\repository\org\freemarker\freemarker\2.3.28\freemarker-2.3.28.jar;"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="Europe/Moscow"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Amazon Corretto\jdk11.0.25_9\bin"/>
+    <property name="sun.java.command" value="C:\Users\baskakov\AppData\Local\Temp\surefire17342400035640444131\surefirebooter-20250114232427660_3.jar C:\Users\baskakov\AppData\Local\Temp\surefire17342400035640444131 2025-01-14T23-24-27_337-jvmRun1 surefire-20250114232427660_1tmp surefire_0-20250114232427660_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Sprint7\Sprint_7\untitled\target\test-classes;C:\Sprint7\Sprint_7\untitled\target\classes;C:\Users\baskakov\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\baskakov\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\baskakov\.m2\repository\io\rest-assured\rest-assured\4.4.0\rest-assured-4.4.0.jar;C:\Users\baskakov\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\baskakov\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.8\groovy-xml-3.0.8.jar;C:\Users\baskakov\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\baskakov\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\baskakov\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\baskakov\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\baskakov\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\baskakov\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\baskakov\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\baskakov\.m2\repository\io\rest-assured\json-path\4.4.0\json-path-4.4.0.jar;C:\Users\baskakov\.m2\repository\org\codehaus\groovy\groovy-json\3.0.8\groovy-json-3.0.8.jar;C:\Users\baskakov\.m2\repository\io\rest-assured\rest-assured-common\4.4.0\rest-assured-common-4.4.0.jar;C:\Users\baskakov\.m2\repository\io\rest-assured\xml-path\4.4.0\xml-path-4.4.0.jar;C:\Users\baskakov\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\baskakov\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\baskakov\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\baskakov\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\baskakov\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\baskakov\.m2\repository\io\qameta\allure\allure-junit4\2.9.0\allure-junit4-2.9.0.jar;C:\Users\baskakov\.m2\repository\io\qameta\allure\allure-java-commons\2.9.0\allure-java-commons-2.9.0.jar;C:\Users\baskakov\.m2\repository\io\qameta\allure\allure-model\2.9.0\allure-model-2.9.0.jar;C:\Users\baskakov\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.7\jackson-databind-2.9.7.jar;C:\Users\baskakov\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\Users\baskakov\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.7\jackson-core-2.9.7.jar;C:\Users\baskakov\.m2\repository\org\apache\tika\tika-core\1.19.1\tika-core-1.19.1.jar;C:\Users\baskakov\.m2\repository\org\aspectj\aspectjrt\1.9.1\aspectjrt-1.9.1.jar;C:\Users\baskakov\.m2\repository\org\jooq\joor-java-8\0.9.9\joor-java-8-0.9.9.jar;C:\Users\baskakov\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\baskakov\.m2\repository\io\qameta\allure\allure-rest-assured\2.9.0\allure-rest-assured-2.9.0.jar;C:\Users\baskakov\.m2\repository\io\qameta\allure\allure-attachments\2.9.0\allure-attachments-2.9.0.jar;C:\Users\baskakov\.m2\repository\org\freemarker\freemarker\2.3.28\freemarker-2.3.28.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\baskakov"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-10-15"/>
+    <property name="java.home" value="C:\Program Files\Amazon Corretto\jdk11.0.25_9"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Sprint7\Sprint_7\untitled"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\baskakov\AppData\Local\Temp\surefire17342400035640444131\surefirebooter-20250114232427660_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.25+9-LTS"/>
+    <property name="user.name" value="baskakov"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1251"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-11.0.25.9.1"/>
+    <property name="localRepository" value="C:\Users\baskakov\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-11/issues/"/>
+    <property name="java.io.tmpdir" value="C:\Users\baskakov\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2024.3"/>
+    <property name="java.version" value="11.0.25"/>
+    <property name="user.dir" value="C:\Sprint7\Sprint_7\untitled"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Amazon Corretto\jdk11.0.25_9\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files\Amazon Corretto\jdk11.0.25_9\bin;C:\Program Files\apache-maven-3.9.9\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\apache-maven-3.9.9\bin;C:\allure\allure-2.9.0\bin;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="11.0.25+9-LTS"/>
+    <property name="java.specification.maintenance.version" value="3"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="orderGetList" classname="GetOrderTest" time="60.16">
+    <error message="Expected response body to be verified as JSON, HTML or XML but no content-type was defined in the response.&#10;Try registering a default parser using:&#10;   RestAssured.defaultParser(&lt;parser type&gt;);&#10;Content was:&#10;Service unavailable&#10;" type="java.lang.IllegalStateException"><![CDATA[java.lang.IllegalStateException: 
+Expected response body to be verified as JSON, HTML or XML but no content-type was defined in the response.
+Try registering a default parser using:
+   RestAssured.defaultParser(<parser type>);
+Content was:
+Service unavailable
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.assertion.StreamVerifier.newAssertion(StreamVerifier.groovy:43)
+	at io.restassured.assertion.StreamVerifier$newAssertion.call(Unknown Source)
+	at io.restassured.assertion.BodyMatcher.validate(BodyMatcher.groovy:85)
+	at io.restassured.assertion.BodyMatcher$validate$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at io.restassured.assertion.BodyMatcher$validate$0.call(Unknown Source)
+	at io.restassured.assertion.BodyMatcherGroup$_validate_closure2.doCall(BodyMatcherGroup.groovy:47)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:263)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+	at groovy.lang.Closure.call(Closure.java:412)
+	at groovy.lang.Closure.call(Closure.java:428)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.collect(DefaultGroovyMethods.java:3575)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.collect(DefaultGroovyMethods.java:3560)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.collect(DefaultGroovyMethods.java:3660)
+	at org.codehaus.groovy.runtime.dgm$101.invoke(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:247)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:56)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at io.restassured.assertion.BodyMatcherGroup.validate(BodyMatcherGroup.groovy:47)
+	at io.restassured.assertion.BodyMatcherGroup$validate$3.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at io.restassured.assertion.BodyMatcherGroup$validate$3.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:480)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at jdk.internal.reflect.GeneratedMethodAccessor88.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:261)
+	at io.restassured.specification.ResponseSpecification$body$0.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at io.restassured.specification.ResponseSpecification$body$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:108)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)
+	at GetOrderTest.orderGetList(GetOrderTest.java:14)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></error>
+    <system-out><![CDATA[Request method:	GET
+Request URI:	http://qa-scooter.praktikum-services.ru/api/v1/orders
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 504 Gateway time out
+Content-Length: 19
+Set-Cookie: _yasc=6DSYTO0MvIga/qX6e+PXDaZhBOczfd3Ha3MjtR2XJby7jbDtUVzeaO2EodRd00lI; domain=.praktikum-services.ru; path=/; expires=Fri, 12 Jan 2035 20:24:32 GMT; secure
+X-Request-Id: 1736886272782317-12960218175185914843
+
+Service unavailable
+]]></system-out>
+  </testcase>
+</testsuite>
